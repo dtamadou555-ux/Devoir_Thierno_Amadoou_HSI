@@ -76,14 +76,15 @@ Difficulté à produire des rapports fiables
 
 3.  Identification des types de Système d’Information
 
-Système utilisé	                                         Type de SI
+Système utilisé	                                              Type de SI
+
 Logiciel d’admission	                                       SI opérationnel
-Logiciel de consultation	                                  SI opérationnel
-Fichier Excel de facturation	                             SI opérationnel
-Dossiers papier	                                           SI opérationnel
-Rapports pour la direction	                               SI décisionnel
-Partage d’informations entre services	                     SI collaboratif
-Suivi global des performances	                             SI stratégique
+Logiciel de consultation	                                   SI opérationnel
+Fichier Excel de facturation	                               SI opérationnel
+Dossiers papier	                                             SI opérationnel
+Rapports pour la direction	                                 SI décisionnel
+Partage d’informations entre services	                       SI collaboratif
+Suivi global des performances	                               SI stratégique
 
 Le SI est majoritairement opérationnel, avec peu de support décisionnel.
 
@@ -134,3 +135,10 @@ Gain de temps pour les professionnels
 Facturation plus fiable et rapide
 
 Meilleure prise de décision pour la direction
+
+
+6. Conclusion générale
+
+L’harmonisation des Systèmes d’Information à travers le Dossier Patient Unique permet à la clinique 
+de passer d’un SI fragmenté à un SI cohérent, efficace et performant, améliorant à la fois la qualité des soins et
+la gestion globale de l’établissement.
