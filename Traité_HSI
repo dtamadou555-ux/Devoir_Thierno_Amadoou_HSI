@@ -5,8 +5,7 @@ TRAITE :
 
 1.	Identification du Système d’Information existant
 
-Un Système d’Information est un ensemble organisé de personnes, données, outils et processus permettant de collecter, traiter et diffuser l’information.
-
+Un système d'information, c'est comme un ensemble de gens, de données et d'outils qui aident à collecter, traiter et partager les infos dans une Entité.
 ·	Acteurs du SI
 
 Les principaux acteurs impliqués dans le système actuel de la clinique sont :
@@ -42,11 +41,11 @@ Archivage papier des informations médicales
 2.  Problèmes liés à la non-harmonisation des SI
 
 L’utilisation de plusieurs systèmes indépendants entraîne plusieurs difficultés :
-Duplication des données patients
-Incohérences entre les informations
-Perte ou détérioration des dossiers papier
-Retards dans la prise en charge des patients
-Difficulté à produire des rapports fiables
+Les données des patients se dupliquent souvent
+Les dossiers papiers se perdent ou se détériorent
+Les prises en charge des patients prennent du retard
+Produire des rapports fiables, c'est difficile aussi
+Les retards dans le soin des gens
 
 3.  Identification des types de Système d’Information
 
@@ -59,21 +58,23 @@ Rapports pour la direction	                                 SI décisionnel
 Partage d’informations entre services	                       SI collaboratif
 Suivi global des performances	                               SI stratégique
 
-Le SI est majoritairement opérationnel, avec peu de support décisionnel.
+Le SI présent est majoritairement opérationnel, avec un peu de support décisionnel.
 
 4.  Proposition de solution d’harmonisation : le DPU
 
 ·	  Principe du Dossier Patient Unique
-Le Dossier Patient Unique (DPU) est un système centralisé qui regroupe toutes les informations du patient dans une seule base de données accessible aux services autorisés.
+Le Dossier Patient Unique, ou DPU, c'est un systeme qui centralise tout. Il met toutes les infos sur un patient dans une seule base de données. Comme ça, les services autorisés peuvent y accéder facilement.
+le but c'est de regrouper tout au même endroit pour que ce soit plus fluide.
+
 ·	 Fonctionnement
-Chaque patient possède un seul dossier
-Tous les services consultent et mettent à jour la même information
-Les données sont partagées en temps réel
+Chaque patient a droit un seul dossier 
+Tous les services peuvent consulter et mettre à jour la même information concernant un patient
+Et les informations (données) sont partagées en temps réel
 ·	Règles de base
 Gestion des droits d’accès (médecins, infirmiers, administration)
 Mise à jour centralisée
-Traçabilité des actions (qui a fait quoi et quand)
-Sécurisation des données médicales
+Traçabilité des actions menées (qui a fait quoi et quand)
+Faire en sorte que chaque donée soit sécurisé
 
 ·	 Schéma simplifié du SI harmonisé
 
@@ -88,7 +89,7 @@ Sécurisation des données médicales
 5.  Bénéfices attendus de l’harmonisation
 
 La mise en place du DPU permet :
-Amélioration de la qualité des soins
-Réduction des erreurs médicales et administratives
-Gain de temps pour les professionnels
-Meilleure prise de décision pour la direction
+Croissance de la qualité des soins
+Moins ou peu d'erreurs médicales et administratives
+Les professionnels gagneront plus de temps
+Et il y aura une facilité de prise de décision pour la direction
