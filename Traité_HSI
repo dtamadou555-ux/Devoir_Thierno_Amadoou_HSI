@@ -10,76 +10,49 @@ Un Système d’Information est un ensemble organisé de personnes, données, ou
 ·	Acteurs du SI
 
 Les principaux acteurs impliqués dans le système actuel de la clinique sont :
-
 Les médecins (consultation, diagnostic, prescription)
-
 Les infirmiers (soins, suivi des patients)
-
 Les agents d’accueil
-
 Les caissiers / service facturation
-
 L’administration
-
 Les patients
 
 ·	 Données utilisées
-
 Les données manipulées par le SI sont notamment :
-
 Identité du patient (nom, âge, contact)
-
 Historique médical
-
 Diagnostics et soins
-
 Prescriptions médicales
-
 Données de paiement et facturation
 
 ·	 Outils existants
 
-Logiciel d’accueil et d’admission
-
+logiciel d’accueil et d’admission
 Logiciel de consultation médicale
-
 Fichier Excel pour la facturation
-
 Dossiers papier pour l’historique médical
 
 ·	Processus actuels
-
 Admission du patient à l’accueil
-
 Consultation médicale
-
 Enregistrement des soins
-
 Facturation
-
 Archivage papier des informations médicales
-
 
 2.  Problèmes liés à la non-harmonisation des SI
 
 L’utilisation de plusieurs systèmes indépendants entraîne plusieurs difficultés :
-
 Duplication des données patients
-
 Incohérences entre les informations
-
 Perte ou détérioration des dossiers papier
-
 Retards dans la prise en charge des patients
-
 Difficulté à produire des rapports fiables
 
 3.  Identification des types de Système d’Information
 
 Système utilisé	                                              Type de SI
-
 Logiciel d’admission	                                       SI opérationnel
-Logiciel de consultation	                                   SI opérationnel
+logiciel de consultation	                                   SI opérationnel
 Fichier Excel de facturation	                               SI opérationnel
 Dossiers papier	                                             SI opérationnel
 Rapports pour la direction	                                 SI décisionnel
@@ -91,25 +64,15 @@ Le SI est majoritairement opérationnel, avec peu de support décisionnel.
 4.  Proposition de solution d’harmonisation : le DPU
 
 ·	  Principe du Dossier Patient Unique
-
 Le Dossier Patient Unique (DPU) est un système centralisé qui regroupe toutes les informations du patient dans une seule base de données accessible aux services autorisés.
-
 ·	 Fonctionnement
-
 Chaque patient possède un seul dossier
-
 Tous les services consultent et mettent à jour la même information
-
 Les données sont partagées en temps réel
-
 ·	Règles de base
-
 Gestion des droits d’accès (médecins, infirmiers, administration)
-
 Mise à jour centralisée
-
 Traçabilité des actions (qui a fait quoi et quand)
-
 Sécurisation des données médicales
 
 ·	 Schéma simplifié du SI harmonisé
@@ -120,25 +83,12 @@ Sécurisation des données médicales
                                |
               Infirmiers — DPU Central — Facturation
                                |
-                        Administration
+                         Administration
 
 5.  Bénéfices attendus de l’harmonisation
 
 La mise en place du DPU permet :
-
 Amélioration de la qualité des soins
-
 Réduction des erreurs médicales et administratives
-
 Gain de temps pour les professionnels
-
-Facturation plus fiable et rapide
-
 Meilleure prise de décision pour la direction
-
-
-6. Conclusion générale
-
-L’harmonisation des Systèmes d’Information à travers le Dossier Patient Unique permet à la clinique 
-de passer d’un SI fragmenté à un SI cohérent, efficace et performant, améliorant à la fois la qualité des soins et
-la gestion globale de l’établissement.
