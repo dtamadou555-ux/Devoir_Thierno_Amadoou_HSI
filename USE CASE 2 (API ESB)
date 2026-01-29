@@ -1,0 +1,54 @@
+USE CASE 2 : IDENTIFIANT CLIENT UNIQUE & API D'INTEROPERABILITE
+
+1) DESCRIPTION DE LA SITUATION ACTUELLE:
+Dans cette institution de microfinance, il y a ces quatre systèmes qui tournent chacun de leur côté, 
+sans se connecter entre eux. Un pour gérer les comptes, un autre les crédits, un autre pour le recouvrement des dettes, 
+et puis un autre le reporting pour les rapports. Chacun utilise son propre identifiant pour l’identification des clients, 
+aucun identifiant standard. Et avec ce système suivant, les services (Système) ne communiquent pas et dans ce cas un client se retrouve 
+avec quatre identifiants différents, un par système. Les infos sur les clients sont stockées un peu partout au sein de chaque service.
+
+2) IDENTIFICATION DES PROBLEMES LIES A L'ABSENCE D'IDENTIFIANT UNIQUE:
+Je pense que le manque d’identifiant unique crée pas mal de soucis. Par exemple, il y a des doublons de clients qui sont stockés un peu partout
+au sein de l’entreprise, la même personne peut apparaître sous des identifiants différents. Les données ne collent pas toujours parfaitement,
+comme un nom qui varie  d’un système à l’autre, ou une adresse qui diffère d’un système à un autre. Pour suivre le crédit, 
+c’est compliqué de relier tout à l’historique complet des paiements. Et pour le reporting, il finit par être peu fiable à cause de la non concordance des données (identifiants).
+Il y a aussi des risques plus graves, genre la non-conformité aux règles anti blanchiment, parce que le KYC foire souvent avec ces incohérences. 
+
+3) IDENTIFICATION DES MASTERS DATA CONCERNEES:
+Les master data, ce sont ces infos de base qui devraient être partagées partout au sein de l’entreprise, les trucs stables comme l’identifiant client unique
+pour lier toutes les opérations. Le nom et le prénom pour identifier formellement, ça devrait être le même dans tous les systèmes. 
+La date de naissance pour vérifier l’identité et segmenter par âge. L’agence d’attache pour localiser les opérations, et le type de client, 
+particulier ou entreprise, ça détermine les règles métier spécifiques. Ces données pourront servir à tout le monde dans le suivi du dossier client, 
+donc il faut les partager sans causer de doublons.
+
+4) DEFINITION DE LA DINGLE SOURCE OF TRUTH (SSOT):
+Pour le Single Source of Truth, ou SSOT, ça serait idéalement le système d’ouverture de comptes. C’est là qu’on crée l’identité client unique dès le premier contact,
+avec le KYC initial qui contrôle tout dès le début c’est-à-dire à l’ouverture du compte. Seul ce système crée ou modifie les master data,
+les autres se contentent de consulter ou prendre l’identifiant de chaque personne comme référence. 
+
+5) PROPOSITION DE LA SOLUTION D'HARMONISATION:
+Pour une solution harmonisation de tout ce système , il faut mettre en place une API centrale. Le SSOT se connecte à cette API, et les autres systèmes,
+crédits, recouvrement, reporting, se branchent dessus pour accéder aux données dont ils ont besoins.. Via l’API, on expose les master data pour consultation ou actualisation contrôlée. 
+Les autres deviennent juste des consommateurs, ils réfèrent l’ID et appellent l’API quand ils en ont besoin. Avec ce SSOT les modifications et l’ajout d’un client se fera en temps reel, 
+et validation avant toute modif.
+EXEMPLE SCHEMA:           
+
+                                                                     [Recouvrement]     
+                                                                           ↓
+                                    [SSOT: Ouverture Comptes]  ←→   [API Centrale]   ←  [Reporting]
+                                                                          ↑                      
+                                                                  [Gestion Crédits] 
+ 
+
+6) EXPLICATION DU ROLE D'API D'INTEROPERABILITE:
+L’API d’interopérabilité, elle agit comme un guichet unique au centre de tout. Tous les systemes accèdent instantanément aux mêmes master data, 
+identifiant, nom et autres sans duplication nulle part. ça évite les incohérences, une seule source officielle pour tout. Les échanges sont standardises,
+une simple requête via l ID suffit
+
+7) IDENTIFICATION DES BENEFICES DE LA SOLUTION:
+Les bénéfices sont pas mal:
+Une vision client a 360 degrés avec suivi complet des comptes, crédits et paiements.
+Données fiables,
+Moins d’erreurs humaines grâce à moins de ressaisie.
+Pour les décisions, le reporting devient précis et en temps réel.
+Conformité renforcée avec un meilleur KYC et une traçabilité claire.
